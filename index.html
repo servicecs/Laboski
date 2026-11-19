@@ -13,6 +13,40 @@
   <!-- Projektbeschreibung -->
   <p>Dieses Projekt ist eine einfache Webseite zur Pizza-Bestellung mit HTML und CSS.</p>
 
+  <!-- Speisekarte -->
+  <section class="speisekarte">
+    <h2>🍕 Unsere Speisekarte</h2>
+    <p>Alle Pizzen werden frisch zubereitet.</p>
+
+    <div class="pizza-liste">
+
+      <article class="pizza-karte">
+        <h3>Pizza Margherita</h3>
+        <p>Tomatensauce, Mozzarella, Basilikum</p>
+        <span class="preis">7,50 €</span>
+      </article>
+
+      <article class="pizza-karte">
+        <h3>Pizza Salami</h3>
+        <p>Tomatensauce, Mozzarella, Salami</p>
+        <span class="preis">8,50 €</span>
+      </article>
+
+      <article class="pizza-karte">
+        <h3>Pizza Funghi</h3>
+        <p>Tomatensauce, Mozzarella, Champignons</p>
+        <span class="preis">8,00 €</span>
+      </article>
+
+      <article class="pizza-karte">
+        <h3>Pizza Tonno</h3>
+        <p>Tomatensauce, Mozzarella, Thunfisch, Zwiebeln</p>
+        <span class="preis">9,50 €</span>
+      </article>
+
+    </div>
+  </section>
+
   <!-- Bestellformular -->
   <h2>Pizza bestellen</h2>
 
@@ -23,10 +57,10 @@
       <label for="pizza">Pizza auswählen:</label>
       <select id="pizza" name="pizza" required>
         <option value="">Bitte auswählen</option>
-        <option value="margherita">Margherita</option>
-        <option value="salami">Salami</option>
-        <option value="funghi">Funghi</option>
-        <option value="tonno">Tonno</option>
+        <option value="margherita">Margherita – 7,50 €</option>
+        <option value="salami">Salami – 8,50 €</option>
+        <option value="funghi">Funghi – 8,00 €</option>
+        <option value="tonno">Tonno – 9,50 €</option>
       </select>
     </div>
 
@@ -62,6 +96,7 @@
   <!-- Anzeige der Bestellungen -->
   <section class="karte bestelluebersicht" aria-labelledby="bestellungen">
     <h2 id="bestellungen">Bestellübersicht</h2>
+
     <div class="tabellen-container">
       <table>
         <caption>Eingegangene Bestellungen</caption>
@@ -75,7 +110,9 @@
         </thead>
         <tbody>
           <tr>
-            <td class="leer" colspan="4">Noch keine Bestellungen vorhanden.</td>
+            <td class="leer" colspan="4">
+              Noch keine Bestellungen vorhanden.
+            </td>
           </tr>
         </tbody>
       </table>
@@ -86,8 +123,7 @@
   <p>
     <a href="index.html">Zurück zur Startseite</a>
   </p>
-<!-- Link zur Unterseite Über uns -->
-<a href="uber-uns.html">Über uns</a>
+
   <footer>
     <p>Gruppenmitglieder: Yane, Dennis und Tayfun</p>
   </footer>
