@@ -1,15 +1,201 @@
-/* Grundlegende Schriftart und Seitenabstand */
+
+/* Grundlayout */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  margin: 20px;
+  background-color: #f3f4f6;
+  color: #1f2937;
 }
 
-/* Link-Farbe und Abstand */
-a {
-  color: #1e3a8a;
+/* Kopfbereich */
+header {
+  background-color: #dc2626;
+  color: white;
+  text-align: center;
+  padding: 32px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 12px;
+}
+
+/* Hauptcontainer */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Projektbeschreibung */
+.beschreibung {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.beschreibung p {
+  color: #6b7280;
+}
+
+/* Weiße Karten */
+.karte {
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.karte h2 {
+  color: #dc2626;
+  margin-top: 0;
+}
+
+/* Formular */
+.formularfeld {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Eingabefeld aktiv */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px #fee2e2;
+}
+
+/* Lieferadresse */
+form h3 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
+
+/* PLZ und Ort nebeneinander */
+.adresszeile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Bestellbutton */
+.bestellbutton {
+  width: 100%;
+  padding: 14px;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bestellbutton:hover {
+  background-color: #b91c1c;
+}
+
+/* Bestellübersicht */
+.bestelluebersicht {
+  margin-top: 40px;
+}
+
+.tabellen-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+caption {
+  margin-bottom: 12px;
+  color: #6b7280;
+}
+
+th {
+  background-color: #dc2626;
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.leer {
+  text-align: center;
+  color: #6b7280;
+  padding: 32px;
+}
+
+/* Zurück-Link */
+.zurueck {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.zurueck a {
+  color: #dc2626;
   text-decoration: none;
+  font-weight: bold;
 }
 
-a:hover {
+.zurueck a:hover {
   text-decoration: underline;
+}
+
+/* Fußbereich */
+footer {
+  background-color: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 24px;
+}
+
+/* Anpassung für Smartphones */
+@media (max-width: 600px) {
+  .adresszeile {
+    grid-template-columns: 1fr;
+  }
+
+  .karte {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
 }
