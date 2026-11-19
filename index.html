@@ -60,29 +60,35 @@
   </form>
 
   <!-- Anzeige der Bestellungen -->
-  <section aria-labelledby="bestellungen">
+  <section class="karte bestelluebersicht" aria-labelledby="bestellungen">
     <h2 id="bestellungen">Bestellübersicht</h2>
-    <table>
-      <caption>Eingegangene Bestellungen</caption>
-      <thead>
-        <tr>
-          <th scope="col">Pizza</th>
-          <th scope="col">Name</th>
-          <th scope="col">Lieferadresse</th>
-          <th scope="col">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="4">Noch keine Bestellungen vorhanden.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="tabellen-container">
+      <table>
+        <caption>Eingegangene Bestellungen</caption>
+        <thead>
+          <tr>
+            <th scope="col">Pizza</th>
+            <th scope="col">Name</th>
+            <th scope="col">Lieferadresse</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="leer" colspan="4">Noch keine Bestellungen vorhanden.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <!-- Link zurück zur Startseite -->
   <p>
     <a href="index.html">Zurück zur Startseite</a>
   </p>
+
+  <footer>
+    <p>Gruppenmitglieder: Yane, Dennis und Tayfun</p>
+  </footer>
 </body>
 </html>
