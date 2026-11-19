@@ -127,10 +127,14 @@ form h3 {
 
 .tabellen-container {
   overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: white;
 }
 
 table {
   width: 100%;
+  min-width: 560px;
   border-collapse: collapse;
   text-align: left;
 }
