@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -12,7 +13,55 @@
   <!-- Projektbeschreibung -->
   <p>Dieses Projekt ist eine einfache Webseite zur Pizza-Bestellung mit HTML und CSS.</p>
 
+  <!-- Bestellformular -->
+  <h2>Pizza bestellen</h2>
+
+  <form action="#" method="post">
+
+    <!-- Pizza auswählen -->
+    <div>
+      <label for="pizza">Pizza auswählen:</label>
+      <select id="pizza" name="pizza" required>
+        <option value="">Bitte auswählen</option>
+        <option value="margherita">Margherita</option>
+        <option value="salami">Salami</option>
+        <option value="funghi">Funghi</option>
+        <option value="tonno">Tonno</option>
+      </select>
+    </div>
+
+    <!-- Lieferadresse -->
+    <h3>Lieferadresse</h3>
+
+    <div>
+      <label for="name">Vor- und Nachname:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div>
+      <label for="strasse">Straße und Hausnummer:</label>
+      <input type="text" id="strasse" name="strasse" required>
+    </div>
+
+    <div>
+      <label for="plz">Postleitzahl:</label>
+      <input type="text" id="plz" name="plz"
+             pattern="[0-9]{5}" maxlength="5" required>
+    </div>
+
+    <div>
+      <label for="ort">Ort:</label>
+      <input type="text" id="ort" name="ort" required>
+    </div>
+
+    <!-- Bestellung absenden -->
+    <button type="submit">Jetzt bestellen</button>
+
+  </form>
+
   <!-- Link zurück zur Startseite -->
-  <a href="index.html">Zurück zur Startseite</a>
+  <p>
+    <a href="index.html">Zurück zur Startseite</a>
+  </p>
 </body>
 </html>
